@@ -2,49 +2,72 @@
 <html lang="es-AR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferreteria </title>
+    <title>Hidrolavadoras - Ferreteria Lo Atamos Con Alambre</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
+        #logo {
+            width: 90px;
+        }
+
+        #icono-busqueda {
+            font-size: 16px;
+        }
+
         /*Indica el tamaño de las imagenes de los productos*/
         .producto-central>img {
-            width: 250px;
+            width: 260px;
         }
 
         .oferta>img {
-            width: 150px;
+            width: 180px;
         }
+
+        /* Tablas de especificaciones */
+        table, th, td {
+            border-collapse: collapse;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        /* Para las ofertas */
+        .tachado {
+            text-decoration: line-through;
+        }
+
     </style>
 
 </head>
 
 <body>
+
     <header>
 
-        <img src="img/logo.png" alt="logo" width="90">        
-        <h1> FERRETERIA </h1>
-        <h2> Lo atamos con alambre </h2>
+        <img id="logo" src="img/logo.png" alt="logo">    
 
-        <!-- Barra de busqueda y carrito-->
+        <h1>FERRETERIA</h1>
+
+        <h2>Lo atamos con alambre</h2>
+
+        <!-- Barra de busqueda y carrito -->
         <div class="busqueda-carrito">
             <input type="text" placeholder="Buscar..">
-            <button><span class="material-icons" style="font-size: 15px">search</span></button>
+            <button><span id="icono-busqueda" class="material-icons">search</span></button>
             <a href=""><span class="material-icons">shopping_cart</span></a>
         </div>
 
-        <!-- Menu de navegación-->
+        <!-- Menu de navegación -->
         <nav>
             <ul>
-                <li><a href="index.html"> INICIO </a></li>
-                <li><a href="herramientasMano.html"> HERRAMIENTAS DE MANO </a></li>
-                <li><a href="hidrolavadoras.html"> HIDROLAVADORAS </a></li>
-                <li><a href="jardineria.html"> JARDINERIA </a></li>
-                <li><a href="herramientasbanco.html"> HERRAMIENTAS DE BANCO </a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="herramientasMano.html">HERRAMIENTAS DE MANO</a></li>
+                <li><a href="hidrolavadoras.html">HIDROLAVADORAS</a></li>
+                <li><a href="jardineria.html">JARDINERIA</a></li>
+                <li><a href="herramientasbanco.html">HERRAMIENTAS DE BANCO</a></li>
             </ul>
         </nav>
 
@@ -55,30 +78,61 @@
 
         <div class="producto-central">
 
-            <img src="img/herramientasMano/MARTILLO-DEMOLEDOR.jpg" alt="MartilloDemoledor">
+            <img src="img/herramientasMano/MARTILLO-DEMOLEDOR.jpg" alt="Martillo-Demoledor">
 
-            <h2> Martillo Demoledor MT Makita M8600G </h2>
+            <h2>Martillo Demoledor MT Makita M8600G</h2>
             
+            <h3>Caracteristicas</h3>
+
             <p>
                 El martillo demoledor Makita M8600G cuenta con un potente motor de 900W que 
                 entrega 7.2J de potencia de golpe Su diseño compacto y ligero ayuda a reducir 
                 la fatiga del operador, con agarre suave y doble aislamiento, que proporcionan 
-                más comodidad y control a la hora de trabajar
+                más comodidad y control a la hora de trabajar.
             </p>
-                
-            <h3>
-                PRECIO $78900.00
-            </h3>
+
+            <h3>Especificaciones Tecnicas</h3>
+
+            <table>
+
+                <tr>    
+                    <th>Potencia</th>
+                    <td>900W</td>
+                </tr>
+        
+                <tr>
+                    <th>Energía de Impacto</th>
+                    <td>7.2J</td>
+                </tr>
+              
+                <tr>
+                    <th>Encastre</th>
+                    <td>HEXAGONAL DE 17MM</td>
+                </tr>
+              
+                <tr>
+                    <th>Incluye</th>
+                    <td>MANGO LATERAL Y MALETÍN</td>
+                </tr>
+        
+                <tr>
+                    <th>Garantía</th>
+                    <td>1 AÑO DE MAKITA</td>
+                </tr>
+        
+            </table>
+
+            <h3>PRECIO: $78900.00</h3>
 
         </div>
 
         <div class="producto-central">
 
-            <img src="img/hidrolavadora/HIDROLAVADORA-BLACK-AND-DECKER.jpg " alt="hidrolavadorablackanddecker">
+            <img src="img/hidrolavadora/HIDROLAVADORA-BLACK-AND-DECKER.jpg " alt="Hidrolavadora-black-and-decker">
 
-            <h2>
-                Hidrolavadora Black & Decker PW1700
-            </h2>
+            <h2>Hidrolavadora Black & Decker PW1700</h2>
+
+            <h3>Caracteristicas</h3>
 
             <p> 
                 Hidrolavadora de alta presión de Black & Decker, compacta y potente. gracias a su 
@@ -86,10 +140,39 @@
                 almacena en posición replegada frente a la extendida. Su función de autoaspirado 
                 le permite utilizar agua de cualquier fuente: un cubo, un lago o una piscina. 
             </p>
+
+            <h3>Especificaciones Tecnicas</h3>
+
+            <table>
+
+                <tr>    
+                    <th>Presión máxima</th>
+                    <td>130BAR</td>
+                </tr>
+        
+                <tr>
+                    <th>Rendimiento ideal</th>
+                    <td>1.700W</td>
+                </tr>
+              
+                <tr>
+                    <th>Óptimo flujo de agua</th>
+                    <td>370 litros por hora</td>
+                </tr>
+              
+                <tr>
+                    <th>Largo de la manguera</th>
+                    <td>6 metros</td>
+                </tr>
+        
+                <tr>
+                    <th>Largo del cable</th>
+                    <td>5 metros</td>
+                </tr>
+        
+            </table>
             
-            <h3>
-                PRECIO $46999.00
-            </h3>
+            <h3>PRECIO: $46999.00</h3>
 
         </div>
 
@@ -97,10 +180,10 @@
 
             <img src="img/jardineria/BORDEADORA-INALAMBRICA.jpg" alt="Bordeadora-inalambrica">
 
-            <h2>
-                Bordeadora Inalambrica Einhell GE-CT 18 Li-Solo
-            </h2>
+            <h2>Bordeadora Inalambrica Einhell GE-CT 18 Li-Solo</h2>
              
+            <h3>Caracteristicas</h3>
+
             <p> 
                 La bordeadora GE-CT 18 Li es un aparato de alto rendimiento y calidad que permite mantener 
                 el jardín cuidado donde quiera que la cortadora de césped no pueda acceder. El mango telescópico
@@ -109,9 +192,38 @@
                 condiciones de trabajo difíciles. 
             </p>
 
-            <h3>
-                PRECIO $20510.00
-            </h3>
+            <h3>Especificaciones Tecnicas</h3>
+
+            <table>
+
+                <tr>    
+                    <th>Tensión de alimentación</th>
+                    <td>18V</td>
+                </tr>
+        
+                <tr>
+                    <th>Autonomía</th>
+                    <td>55 min</td>
+                </tr>
+              
+                <tr>
+                    <th>Tiempo de carga</th>
+                    <td>40 minutos</td>
+                </tr>
+              
+                <tr>
+                    <th>Velocidad sin carga</th>
+                    <td>8.500RPM</td>
+                </tr>
+        
+                <tr>
+                    <th>Ancho de cort</th>
+                    <td>24CM</td>
+                </tr>
+        
+            </table>
+
+            <h3>PRECIO: $20510.00</h3>
 
         </div>
 
@@ -120,49 +232,38 @@
     <!-- Barra de ofertas -->
     <aside>
 
-        <h1>
-            OFERTAS
-        </h1>
+        <h1>OFERTAS</h1>
 
         <div class="oferta">
 
-            <img src="img/jardineria/DESMALEZADORA-BORDEADORA.jpg" alt="DesmalezadoraBordeadora">
+            <img src="img/jardineria/DESMALEZADORA-BORDEADORA.jpg" alt="Desmalezadora-Bordeadora">
 
-            <h2>
-                Desmalezadora Bordeadora
-            </h2>
+            <h2>Desmalezadora Bordeadora 4 Tiempos Makita EBH252U</h2>
 
-            <h3>
-                PRECIO $20000.00
-            </h3>
+            <h4>PRECIO ORIGINAL: <span class="tachado">$77800.00</span></h4>
+            <h3>OFERTA: $60000.00</h3>
 
         </div>
 
         <div class="oferta">
 
-            <img src="img/hidrolavadora/HIDROLAVADORA-MICHELIN.png" alt="HidrolavadoraMichelin">
+            <img src="img/hidrolavadora/HIDROLAVADORA-MICHELIN.png" alt="Hidrolavadora-Michelin">
 
-            <h2>
-                Hidrolavadora Michelin
-            </h2>
+            <h2>Hidrolavadora Michelin MPX100</h2>
 
-            <h3>
-                PRECIO $20000.00
-            </h3>
+            <h4>PRECIO ORIGINAL: <span class="tachado">$30130.00</span></h4>
+            <h3>OFERTA: $25500.00</h3>
 
         </div>
 
         <div class="oferta">
 
-            <img src="img/herramientasBanco/LIJADORA-DE-BANDA.jpeg" alt="LijadoradeBanda">
+            <img src="img/herramientasBanco/LIJADORA-DE-BANDA.jpeg" alt="Lijadora-de-Banda">
 
-            <h2>
-                Lijadora de Banda
-            </h2>
+            <h2>Lijadora de Banda de Banco Gamma 686</h2>
 
-            <h3>
-                PRECIO $20000.00
-            </h3>
+            <h4>PRECIO ORIGINAL: <span class="tachado">$38700.00</span></h4>
+            <h3>OFERTA: $32000.00</h3>
 
         </div>
 
@@ -172,9 +273,7 @@
 
         <p>Derechos reservados 2023</p>
 
-        <b>
-            | Eduardo Weinzettel | Julián Ruiz |
-        </b>
+        <b>| Eduardo Weinzettel | Julián Ruiz |</b>
 
     </footer>
 

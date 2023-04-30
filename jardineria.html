@@ -2,57 +2,72 @@
 <html lang="es-AR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jardineria</title>
+    <title>Hidrolavadoras - Ferreteria Lo Atamos Con Alambre</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
+        #logo {
+            width: 90px;
+        }
+
+        #icono-busqueda {
+            font-size: 16px;
+        }
+
         /*Indica el tamaño de las imagenes de los productos*/
         .producto-central>img {
-            width: 250px;
+            width: 260px;
         }
 
         .oferta>img {
-            width: 150px;
+            width: 180px;
         }
 
+        /* Tablas de especificaciones */
         table, th, td {
             border-collapse: collapse;
             padding: 10px;
             border: 1px solid black;
         }
+
+        /* Para las ofertas */
+        .tachado {
+            text-decoration: line-through;
+        }
+
     </style>
 
 </head>
 
 <body>
+
     <header>
 
-        <img src="img/logo.png" alt="logo" width="90">
-        
-        <h1> FERRETERIA </h1>
+        <img id="logo" src="img/logo.png" alt="logo">    
 
-        <h2> Lo atamos con alambre </h2>
+        <h1>FERRETERIA</h1>
 
-        <!-- Barra de busqueda y carrito-->
+        <h2>Lo atamos con alambre</h2>
+
+        <!-- Barra de busqueda y carrito -->
         <div class="busqueda-carrito">
             <input type="text" placeholder="Buscar..">
-            <button><span class="material-icons" style="font-size: 15px">search</span></button>
+            <button><span id="icono-busqueda" class="material-icons">search</span></button>
             <a href=""><span class="material-icons">shopping_cart</span></a>
         </div>
 
-        <!-- Menu de navegación-->
+        <!-- Menu de navegación -->
         <nav>
             <ul>
-                <li><a href="index.html"> INICIO </a></li>
-                <li><a href="herramientasMano.html"> HERRAMIENTAS DE MANO </a></li>
-                <li><a href="hidrolavadoras.html"> HIDROLAVADORAS </a></li>
-                <li><a href="jardineria.html"> JARDINERIA </a></li>
-                <li><a href="herramientasbanco.html"> HERRAMIENTAS DE BANCO </a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="herramientasMano.html">HERRAMIENTAS DE MANO</a></li>
+                <li><a href="hidrolavadoras.html">HIDROLAVADORAS</a></li>
+                <li><a href="jardineria.html">JARDINERIA</a></li>
+                <li><a href="herramientasbanco.html">HERRAMIENTAS DE BANCO</a></li>
             </ul>
         </nav>
 
@@ -60,20 +75,19 @@
 
     <!-- Productos principales -->
     <main>
+        
         <div class="producto-central">
 
             <img src="img/jardineria/FUMIGADOR-SOPLADOR.jpg" alt="Fumigador-soplador">
 
-            <h2>
-                Fumigador Soplador a Explosión 4 Tiempos Makita PM7650H
-            </h2>
+            <h2>Fumigador Soplador a Explosión 4 Tiempos Makita PM7650H</h2>
 
             <h3>Caracteristicas</h3>
 
             <p>
-                La Sopladora MM4® de Motor de 4-Tiempos con Rociador de Makita es la solución potente y eficiente para paisajistas, agricultores, profesionales de control de plagas, granjeros, trabajadores de mantenimiento, y más
-                La PM7650H está equipada con un motor de trabajo comercial 75.6cc 3.67HP para eficiente dispersión de rocío
-                A diferencia de los modelos con motor de 2-tiempos, el eficiente motor MM4® de 4-tiempos de Makita trabaja sólo con gasolina y no requiere mezcla de aceite
+                La Sopladora MM4® de Motor de 4-Tiempos con Rociador de Makita es la solución potente y eficiente para paisajistas, agricultores, profesionales de control de plagas, granjeros, trabajadores de mantenimiento, y más.
+                La PM7650H está equipada con un motor de trabajo comercial 75.6cc 3.67HP para eficiente dispersión de rocío.
+                A diferencia de los modelos con motor de 2-tiempos, el eficiente motor MM4® de 4-tiempos de Makita trabaja sólo con gasolina y no requiere mezcla de aceite.
             </p>
 
             <h3>Especificaciones Tecnicas</h3>
@@ -107,27 +121,23 @@
         
             </table>
 
-            <h3>
-                PRECIO $236700.00
-            </h3>
-        </div>
+            <h3>PRECIO: $236700.00</h3>
 
+        </div>
 
         <div class="producto-central">
 
             <img src="img/jardineria/SOPLADORA-A-BATERIA.jpg" alt="Soplador-a-bateria">
 
-            <h2>
-                Soplador a Bateria 18V Einhell TE-CB 18/180 LI Solo
-            </h2>
+            <h2>Soplador a Bateria 18V Einhell TE-CB 18/180 LI Solo</h2>
 
             <h3>Caracteristicas</h3>
 
             <P>
-                El soplador inalámbrico TE-CB 18/180 Li Solo de Einhell enciende el turbo a la hora de limpiar
-                Con tres adaptadores de inflado incluidos, el dispositivo es versátil para usar en lugares de construcción y en talleres
-                El soplador inalámbrico de Einhell se puede utilizar de forma flexible gracias a su funcionamiento mediante batería
-                El soplador forma parte de la acreditada familia Power X-Change. Las baterías son totalmente flexibles intercambiables con aparatos y herramientas de jardín de la serie de aparatos autónomos de Einhell
+                El soplador inalámbrico TE-CB 18/180 Li Solo de Einhell enciende el turbo a la hora de limpiar.
+                Con tres adaptadores de inflado incluidos, el dispositivo es versátil para usar en lugares de construcción y en talleres.
+                El soplador inalámbrico de Einhell se puede utilizar de forma flexible gracias a su funcionamiento mediante batería.
+                El soplador forma parte de la acreditada familia Power X-Change. Las baterías son totalmente flexibles intercambiables con aparatos y herramientas de jardín de la serie de aparatos autónomos de Einhell.
             </P>
 
             <h3>Especificaciones Tecnicas</h3>
@@ -146,9 +156,7 @@
         
             </table>
 
-            <h3>
-                PRECIO $16640.00
-            </h3>
+            <h3>PRECIO: $16640.00</h3>
 
         </div>
 
@@ -156,16 +164,14 @@
 
             <img src="img/jardineria/MOTOSIERRA-A-BATERIA.jpg" alt="Motosierra-a-bateria">
 
-            <h2>
-                Motosierra a bateria Einhell GE-LC 18 Li
-            </h2>
+            <h2>Motosierra a bateria Einhell GE-LC 18 Li</h2>
 
             <h3>Caracteristicas</h3>
 
             <p>
-                La motosierra Einhell GE-LC 18 Li combina la excelente calidad de un producto Einhell con el rendimiento de corte OREGON
-                Con una espada y cadena de guía de alta calidad OREGON, la motosierra inalámbrica es fácil de usar, confiable y segura de operar
-                Esta motosierra confiable y práctica es ideal para podar o talar árboles de tamaño pequeño a mediano, hacer leña y recortar o cortar madera de construcción
+                La motosierra Einhell GE-LC 18 Li combina la excelente calidad de un producto Einhell con el rendimiento de corte OREGON.
+                Con una espada y cadena de guía de alta calidad OREGON, la motosierra inalámbrica es fácil de usar, confiable y segura de operar.
+                Esta motosierra confiable y práctica es ideal para podar o talar árboles de tamaño pequeño a mediano, hacer leña y recortar o cortar madera de construcción.
             </p>
             
             <h3>Especificaciones Tecnicas</h3>
@@ -199,9 +205,7 @@
         
             </table>
 
-            <h3>
-                PRECIO $40820.00
-            </h3>
+            <h3>PRECIO: $40820.00</h3>
 
         </div>
 
@@ -210,36 +214,27 @@
     <!-- Barra de ofertas -->
     <aside>
 
-        <h1>
-            OFERTAS
-        </h1>
+        <h1>OFERTAS</h1>
 
         <div class="oferta">
 
             <img src="img/jardineria/DESMALEZADORA-BORDEADORA.jpg" alt="Desmalezadora-Bordeadora">
 
-            <h2>
-                Desmalezadora Bordeadora
-            </h2>
+            <h2>Desmalezadora Bordeadora 4 Tiempos Makita EBH252U</h2>
 
-            <h3>
-                PRECIO $ 20000
-            </h3>
+            <h4>PRECIO ORIGINAL: <span class="tachado">$77800.00</span></h4>
+            <h3>OFERTA: $60000.00</h3>
 
         </div>
-
 
         <div class="oferta">
 
             <img src="img/hidrolavadora/HIDROLAVADORA-MICHELIN.png" alt="Hidrolavadora-Michelin">
 
-            <h2>
-                Hidrolavadora Michelin
-            </h2>
+            <h2>Hidrolavadora Michelin MPX100</h2>
 
-            <h3>
-                PRECIO $ 20000
-            </h3>
+            <h4>PRECIO ORIGINAL: <span class="tachado">$30130.00</span></h4>
+            <h3>OFERTA: $25500.00</h3>
 
         </div>
 
@@ -247,13 +242,10 @@
 
             <img src="img/herramientasBanco/LIJADORA-DE-BANDA.jpeg" alt="Lijadora-de-Banda">
 
-            <h2>
-                Lijadora de Banda
-            </h2>
+            <h2>Lijadora de Banda de Banco Gamma 686</h2>
 
-            <h3>
-                PRECIO $ 20000
-            </h3>
+            <h4>PRECIO ORIGINAL: <span class="tachado">$38700.00</span></h4>
+            <h3>OFERTA: $32000.00</h3>
 
         </div>
 
@@ -263,9 +255,7 @@
 
         <p>Derechos reservados 2023</p>
 
-        <b>
-            | Eduardo Weinzettel | Julián Ruiz |
-        </b>
+        <b>| Eduardo Weinzettel | Julián Ruiz |</b>
 
     </footer>
 

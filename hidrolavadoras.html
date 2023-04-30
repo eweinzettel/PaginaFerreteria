@@ -5,53 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hidrolavadoras</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Hidrolavadoras - Ferreteria Lo Atamos Con Alambre</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
+        #logo {
+            width: 90px;
+        }
+
+        #icono-busqueda {
+            font-size: 16px;
+        }
+
         /*Indica el tamaño de las imagenes de los productos*/
         .producto-central>img {
-            width: 250px;
+            width: 260px;
         }
 
         .oferta>img {
-            width: 150px;
+            width: 180px;
         }
 
+        /* Tablas de especificaciones */
         table, th, td {
             border-collapse: collapse;
             padding: 10px;
             border: 1px solid black;
         }
+
+        /* Para las ofertas */
+        .tachado {
+            text-decoration: line-through;
+        }
+
     </style>
 
 </head>
 
 <body>
+
     <header>
 
-        <img src="img/logo.png" alt="logo" width="90">
+        <img id="logo" src="img/logo.png" alt="logo">    
 
-        <h1> FERRETERIA </h1>
+        <h1>FERRETERIA</h1>
 
-        <h2> Lo atamos con alambre </h2>
+        <h2>Lo atamos con alambre</h2>
 
-        <!-- Barra de busqueda y carrito-->
+        <!-- Barra de busqueda y carrito -->
         <div class="busqueda-carrito">
             <input type="text" placeholder="Buscar..">
-            <button><span class="material-icons" style="font-size: 15px">search</span></button>
+            <button><span id="icono-busqueda" class="material-icons">search</span></button>
             <a href=""><span class="material-icons">shopping_cart</span></a>
         </div>
 
-        <!-- Menu de navegación-->
+        <!-- Menu de navegación -->
         <nav>
             <ul>
-                <li><a href="index.html"> INICIO </a></li>
-                <li><a href="herramientasMano.html"> HERRAMIENTAS DE MANO </a></li>
-                <li><a href="hidrolavadoras.html"> HIDROLAVADORAS </a></li>
-                <li><a href="jardineria.html"> JARDINERIA </a></li>
-                <li><a href="herramientasbanco.html"> HERRAMIENTAS DE BANCO </a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="herramientasMano.html">HERRAMIENTAS DE MANO</a></li>
+                <li><a href="hidrolavadoras.html">HIDROLAVADORAS</a></li>
+                <li><a href="jardineria.html">JARDINERIA</a></li>
+                <li><a href="herramientasbanco.html">HERRAMIENTAS DE BANCO</a></li>
             </ul>
         </nav>
 
@@ -59,6 +75,7 @@
 
     <!-- Productos principales -->
     <main>
+
         <div class="producto-central">
 
             <img src="img/hidrolavadora/HIDROLAVADORA-KARCHER-K2.jpg" alt="HidrolavadoraKarcher">
@@ -83,7 +100,7 @@
                 agua externo
             </p>
 
-            <h3> Especificaciones Tecnicas </h3>
+            <h3>Especificaciones Tecnicas</h3>
 
             <table>
 
@@ -149,15 +166,17 @@
 
             </table>
 
-            <h3> PRECIO $55000.00 </h3>
+            <h3>PRECIO: $55000.00</h3>
+
         </div>
 
         <div class="producto-central">
+
             <img src="img/hidrolavadora/HIDROLAVADORA-ANNOVI.jpg" alt="HidrolavadoraAnnovi">
 
-            <h2> Hidrolavadora Annovi </h2>
+            <h2>Hidrolavadora Annovi Reverberi 757</h2>
 
-            <h3> Caracteristicas </h3>
+            <h3>Caracteristicas</h3>
 
             <p>
                 Manguera de alta presión de 6 metros de largo con acoples roscados en bronce y los
@@ -168,7 +187,7 @@
                 Manómetro indicador de presión
             </p>
 
-            <h3> Especificaciones Tecnicas </h3>
+            <h3>Especificaciones Tecnicas</h3>
 
             <table>
 
@@ -234,7 +253,7 @@
 
             </table>
 
-            <h3> PRECIO $42000.00 </h3>
+            <h3>PRECIO: $202000.00</h3>
 
         </div>
 
@@ -242,9 +261,9 @@
 
             <img src="img/hidrolavadora/HIDROLAVADORA-BLACK-AND-DECKER.jpg" alt="Hidrolavadora-black-and-decker">
 
-            <h2> Hidrolavadora Black & Decker PW1700 </h2>
+            <h2>Hidrolavadora Black & Decker PW1700</h2>
 
-            <h3> Caracteristicas </h3>
+            <h3>Caracteristicas</h3>
 
             <p>
                 La hidrolavadora a presión black and decker combina potencia, rendimiento y versatilidad
@@ -254,8 +273,7 @@
                 Es ideal para remover verdín y pintura vieja.
             </p>
 
-            <h3> Especificaciones Tecnicas </h3>
-
+            <h3>Especificaciones Tecnicas</h3>
 
             <table>
 
@@ -322,66 +340,57 @@
             </table>
 
 
-            <h3> PRECIO $46999.00 </h3>
+            <h3>PRECIO: $46999.00</h3>
 
         </div>
+
     </main>
 
     <!-- Barra de ofertas -->
     <aside>
 
-        <h1>
-            OFERTAS
-        </h1>
+        <h1>OFERTAS</h1>
 
         <div class="oferta">
-            <img src="img/jardineria/DESMALEZADORA-BORDEADORA.jpg" alt="Desmalezadora-Bordeadora">
-            <h2>
-                Desmalezadora Bordeadora
-            </h2>
 
-            <h3>
-                PRECIO $20000.00
-            </h3>
+            <img src="img/jardineria/DESMALEZADORA-BORDEADORA.jpg" alt="Desmalezadora-Bordeadora">
+
+            <h2>Desmalezadora Bordeadora 4 Tiempos Makita EBH252U</h2>
+
+            <h4>PRECIO ORIGINAL: <span class="tachado">$77800.00</span></h4>
+            <h3>OFERTA: $60000.00</h3>
+
         </div>
 
-
         <div class="oferta">
-            <img src="img/hidrolavadora/HIDROLAVADORA-MICHELIN.png" alt="Hidrolavadora-Michelin">
-           
-            <h2>
-                Hidrolavadora Michelin
-            </h2>
 
-            <h3>
-                PRECIO $20000.00
-            </h3>
+            <img src="img/hidrolavadora/HIDROLAVADORA-MICHELIN.png" alt="Hidrolavadora-Michelin">
+
+            <h2>Hidrolavadora Michelin MPX100</h2>
+
+            <h4>PRECIO ORIGINAL: <span class="tachado">$30130.00</span></h4>
+            <h3>OFERTA: $25500.00</h3>
 
         </div>
 
         <div class="oferta">
 
             <img src="img/herramientasBanco/LIJADORA-DE-BANDA.jpeg" alt="Lijadora-de-Banda">
-            <h2>
-                Lijadora de Banda
-            </h2>
 
-            <h3>
-                PRECIO $20000.00
-            </h3>
+            <h2>Lijadora de Banda de Banco Gamma 686</h2>
+
+            <h4>PRECIO ORIGINAL: <span class="tachado">$38700.00</span></h4>
+            <h3>OFERTA: $32000.00</h3>
 
         </div>
 
     </aside>
 
-
     <footer>
 
         <p>Derechos reservados 2023</p>
 
-        <b>
-            | Eduardo Weinzettel | Julián Ruiz |
-        </b>
+        <b>| Eduardo Weinzettel | Julián Ruiz |</b>
 
     </footer>
 
