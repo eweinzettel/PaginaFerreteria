@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
+
         #logo {
             width: 90px;
         }
@@ -24,15 +25,29 @@
             width: 260px;
         }
 
-        .oferta>img {
-            width: 180px;
-        }
-
         /* Tablas de especificaciones */
-        table, th, td {
+        .tabla-specs,
+        .tabla-specs>tbody>tr>* {
             border-collapse: collapse;
             padding: 10px;
             border: 1px solid black;
+        }
+
+        .seccion-ofertas {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        .oferta > tr > th{
+            border-top: 1px solid black;
+        }
+
+        .oferta > tr > td{
+            text-align: center;
+        }
+
+        .imagen-oferta {
+            width: 180px;
         }
 
         /* Para las ofertas */
@@ -76,11 +91,14 @@
 
     <!-- Productos principales -->
     <main>
+
+        <h1>Productos destacados</h1>
+
         <div class="producto-central">
 
             <img src="img/herramientasMano/CEPILLADORA-DE-MADERA.jpg" alt="Cepilladora-de-madera">
 
-            <h2>Cepillo Makita KP0800</h2>
+            <a href=""><h2>Cepillo Makita KP0800</h2></a>
 
             <h3>Caracteristicas</h3>
 
@@ -96,7 +114,7 @@
 
             <h3>Especificaciones Tecnicas</h3>
 
-            <table>
+            <table class="tabla-specs">
 
                 <tr>
                     <th>Potencia</th>
@@ -149,7 +167,7 @@
 
             <img src="img/herramientasMano/TALADRO-ANGULAR.jpg" alt="Taladro-de-mano">
 
-            <h2>Taladro Angular a Batería DeWalt DCD740B</h2>
+            <a href=""><h2>Taladro Angular a Batería DeWalt DCD740B</h2></a>
 
             <h3>Caracteristicas</h3>
 
@@ -163,7 +181,7 @@
 
             <h3>Especificaciones Tecnicas</h3>
 
-            <table>
+            <table class="tabla-specs">
 
                 <tr>
                     <th>Potencia</th>
@@ -208,9 +226,10 @@
 
         <div class="producto-central">
 
-            <img src="img/herramientasMano/TALADRO-ATORNILLADOR-A-BATERIA.jpg" alt="Taladro-atornillador-a-bateria">
+            <img src="img/herramientasMano/TALADRO-ATORNILLADOR-A-BATERIA.jpg" 
+                alt="Taladro-atornillador-a-bateria">
 
-            <h2>Taladro Atornillador Percutor Makita HP331DZ con Bateria y Cargador</h2>
+            <a href=""><h2>Taladro Atornillador Percutor Makita HP331DZ con Bateria y Cargador</h2></a>
 
             <h3>Caracteristicas</h3>
 
@@ -226,7 +245,7 @@
 
             <h3>Especificaciones Tecnicas</h3>
 
-            <table>
+            <table class="tabla-specs">
 
                 <tr>
                     <th>Potencia</th>
@@ -311,44 +330,86 @@
 
         <h1>OFERTAS</h1>
 
-        <div class="oferta">
+        <table class="seccion-ofertas">
+            <tbody class="oferta">
+                <tr>
+                    <th>
+                        <img class="imagen-oferta" src="img/jardineria/DESMALEZADORA-BORDEADORA.jpg"
+                            alt="Desmalezadora-Bordeadora">
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href=""><h2>Desmalezadora Bordeadora 4 Tiempos Makita EBH252U</h2></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>PRECIO ORIGINAL: <span class="tachado">$77800.00</span></h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>OFERTA: $60000.00</h3>
+                    </td>
+                </tr>
+            </tbody>
 
-            <img src="img/jardineria/DESMALEZADORA-BORDEADORA.jpg" alt="Desmalezadora-Bordeadora">
+            <tbody class="oferta">
+                <tr>
+                    <th>
+                        <img class="imagen-oferta" src="img/hidrolavadora/HIDROLAVADORA-MICHELIN.png"
+                            alt="Hidrolavadora-Michelin">
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href=""><h2>Hidrolavadora Michelin MPX100</h2></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>PRECIO ORIGINAL: <span class="tachado">$30130.00</span></h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>OFERTA: $25500.00</h3>
+                    </td>
+                </tr>
+            </tbody>
 
-            <h2>Desmalezadora Bordeadora 4 Tiempos Makita EBH252U</h2>
+            <tbody class="oferta">
+                <tr>
+                    <th>
+                        <img class="imagen-oferta" src="img/herramientasBanco/LIJADORA-DE-BANDA.jpeg" 
+                            alt="Lijadora-de-Banda">
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href=""><h2>Lijadora de Banda de Banco Gamma 686</h2></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>PRECIO ORIGINAL: <span class="tachado">$38700.00</span></h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>OFERTA: $32000.00</h3>
+                    </td>
+                </tr>
+            </tbody>
 
-            <h4>PRECIO ORIGINAL: <span class="tachado">$77800.00</span></h4>
-            <h3>OFERTA: $60000.00</h3>
-
-        </div>
-
-        <div class="oferta">
-
-            <img src="img/hidrolavadora/HIDROLAVADORA-MICHELIN.png" alt="Hidrolavadora-Michelin">
-
-            <h2>Hidrolavadora Michelin MPX100</h2>
-
-            <h4>PRECIO ORIGINAL: <span class="tachado">$30130.00</span></h4>
-            <h3>OFERTA: $25500.00</h3>
-
-        </div>
-
-        <div class="oferta">
-
-            <img src="img/herramientasBanco/LIJADORA-DE-BANDA.jpeg" alt="Lijadora-de-Banda">
-
-            <h2>Lijadora de Banda de Banco Gamma 686</h2>
-
-            <h4>PRECIO ORIGINAL: <span class="tachado">$38700.00</span></h4>
-            <h3>OFERTA: $32000.00</h3>
-
-        </div>
+        </table>
 
     </aside>
 
     <footer>
 
-        <p>Derechos reservados 2023</p>
+        <p>Copyright © 2023 Todos los derechos reservados</p>
 
         <b>| Eduardo Weinzettel | Julián Ruiz |</b>
 
